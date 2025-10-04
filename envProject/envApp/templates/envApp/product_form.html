@@ -1,0 +1,10 @@
+{% extends "envApp/layout.html" %}
+    {% block title %}Product{% endblock title %}
+    {% block content %}
+<h1 class="text-center">Product Form</h1>
+<form class="jumbotron" method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button class='btn btn-success' type="submit">Save Product</button>
+</form>
+    {% endblock %}
