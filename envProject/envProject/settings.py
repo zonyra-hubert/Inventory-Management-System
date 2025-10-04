@@ -125,3 +125,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+# Authentication settings
+LOGIN_REDIRECT_URL = 'home'
+LOGIN_URL = '/'  # This tells Django where your login page is
